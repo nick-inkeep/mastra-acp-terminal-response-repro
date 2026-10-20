@@ -1,0 +1,20 @@
+{
+  "name": "mastra-acp-terminal-response-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local ACP terminal-response reproduction",
+  "scripts": {
+    "repro": "node repro.mjs max_tokens",
+    "control": "node repro.mjs end_turn",
+    "cancel": "node repro.mjs cancel_requested",
+    "observe": "node observe.mjs max_tokens"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "@mastra/acp": "0.4.2",
+    "@mastra/core": "1.78.0"
+  }
+}
